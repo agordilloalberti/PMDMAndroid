@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PMDMAndroid</string>
+    <string name="vamos_a_hacer_un_login">Vamos a hacer un login</string>
+    <string name="introduzca_el_usuario">Introduzca el usuario</string>
+    <string name="introduzca_la_contraseña" />
+    <string name="introduzca_la_contrasena">introduzca la contrasena</string>
+    <string name="introduzca_la_contrasegna" />
+    <string name="login">Login</string>
 </resources>
