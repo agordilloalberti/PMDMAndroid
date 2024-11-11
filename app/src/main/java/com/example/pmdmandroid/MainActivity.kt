@@ -18,19 +18,15 @@ class MainActivity : AppCompatActivity() {
         val background = findViewById<View>(R.id.background)
         val negro = getResources().getColor(R.color.black)
         val blanco = getResources().getColor(R.color.white)
+        var nb = negro
 
         btnEnviar.setOnClickListener {
-            when (background.setBackgroundColor()) {
-                negro -> {
-                    background.solidColor=blanco
-                    background.setBackgroundColor(blanco)
-                }
-                blanco -> {
-                    background.setBackgroundColor(negro)
-                }
-                else -> {
-                    background.setBackgroundColor(background.solidColor)
-                }
+            if (nb==negro){
+                background.setBackgroundColor(blanco)
+                nb=blanco
+            }else{
+                background.setBackgroundColor(negro)
+                nb=negro
             }
         }
     }
